@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        background-color: #e3fdff;
+        font-family: Arial, sans-serif;
+      }
+
+      fieldset {
+        border: none;
+        padding: 0;
+      }
+
+      legend {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="file"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #0078d7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #005ea6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Головна</a>
+        <a href="articles.html">Статті</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="page-nav.html">Навігація</a>
+        <a href="registration.html" style="color: red; font-weight: bold; text-decoration: underline">Реєстрація</a>
+      </nav>
+    </header>
+    <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+      <fieldset>
+        <legend>Реєстрація</legend>
+        <div>
+          <label for="surname">Прізвище</label>
+          <input id="surname" name="surname" placeholder="Прізвище" type="text">
+        </div>
+        <div>
+          <label for="name">Ім'я</label>
+          <input id="name" name="name" placeholder="Ім'я" type="text">
+        </div>
+        <div>
+          <label for="email">Адреса електронної пошти</label>
+          <input id="email" name="email" placeholder="Email" type="email">
+        </div>
+        <div>
+          <label for="password">Пароль</label>
+          <input id="password" name="password" placeholder="Пароль" type="password">
+        </div>
+        <div>
+          <label for="site">Адреса сайту</label>
+          <input id="site" name="site" type="text" value="mysite.name">
+        </div>
+        <fieldset>
+          <legend>Стать</legend>
+          <div>
+            <input id="gender-male" name="gender" type="radio" value="male">
+            <label for="gender-male">Чоловічий</label>
+          </div>
+          <div>
+            <input id="gender-female" name="gender" type="radio" value="female">
+            <label for="gender-female">Жіночий</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="date">Дата народження</label>
+          <input id="date" name="date" type="date">
+        </div>
+        <div>
+          <label for="file">Додайте фото</label>
+          <input id="file" name="file" type="file">
+        </div>
+        <fieldset>
+          <legend>Виберіть кухню</legend>
+          <div>
+            <input checked id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
+            <label for="kitchen-ua">Українська</label>
+          </div>
+          <div>
+            <input id="kitchen-jp" name="kitchen" type="checkbox" value="jp">
+            <label for="kitchen-jp">Італійська</label>
+          </div>
+          <div>
+            <input id="kitchen-ch" name="kitchen" type="checkbox" value="ch">
+            <label for="kitchen-ch">Східна</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="txt">Про себе в довільній формі</label>
+          <textarea cols="30" id="txt" name="txt" placeholder="Введіть інформацію про себе..." rows="10"></textarea>
+        </div>
+        <div>
+          <button type="submit">Зареєструватися</button>
+          <button type="reset">Очистити форму</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <footer>&copy; Iryna Fastovsky</footer>
+  </body>
+
+</html>
