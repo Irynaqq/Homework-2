@@ -5,17 +5,10 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 20px;
-}
-
-body:not(.gallery-page) {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../img/background1.jpg") center/cover no-repeat;
   background-attachment: fixed;
-}
-
-body.gallery-page {
-  background: url('../img/texture.jpg') repeat;
 }
 
 .container {
@@ -81,12 +74,11 @@ h1 {
   text-align: center;
   margin: 40px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #00ffff;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-#articles-list h2 a {
+.articles-list h2 a {
   font-family: 'Georgia', serif;
   font-size: 24px;
   color: #00ffff;
@@ -96,25 +88,25 @@ h1 {
   display: inline-block;
 }
 
-#articles-list article h2 a:hover {
+.articles-list article h2 a:hover {
   color: #e0f1f1;
   text-decoration: none;
 }
 
-#articles-list article p {
+.articles-list article p {
   background: rgba(255, 255, 255, 0.1);
   padding: 10px;
   border-radius: 4px;
   margin: 10px 0;
 }
 
-#articles-list article p a {
+.articles-list article p a {
   color: #ffffff;
   text-decoration: underline;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-#articles-list article p a:hover {
+.articles-list article p a:hover {
   color: #00ffff;
   text-decoration: none;
 }
@@ -177,14 +169,14 @@ h1 {
   font-weight: bold;
 }
 
-#comments {
+.comments {
   margin-top: 40px;
   background: rgba(255, 255, 255, 0.08);
   padding: 20px;
   border-radius: 6px;
 }
 
-#comments h2 {
+.comments h2 {
   font-size: 28px;
   color: #00ffff;
   border-bottom: 1px solid #00ffff;
@@ -192,7 +184,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-#comments p {
+.comments p {
   margin: 8px 0;
   color: #fff;
 }
@@ -283,36 +275,75 @@ h1 {
   font-weight: bold;
 }
 
-section div {
-  display: inline-block;
-  margin: 10px;
+.gallery-wrap {
+  position: relative;
+  padding: 40px 0;
+  background: url("../img/3d-geometriceskii-abstraktnyi-fon.jpg") repeat;
+  background-size: 400px;
+  text-align: center;
+  z-index: 0;
 }
 
-section div img {
-  border: 5px solid #f6f6f6;
-  transition: border-color 0.3s ease;
+.gallery-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-wrap h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.gallery a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
   width: 350px;
-  height: 250px;
 }
 
-section div img:hover {
+.gallery img {
+  width: 100%;
+  height: 250px;
+  border: 5px solid #f6f6f6;
+  object-fit: cover;
+  transition: border-color 0.3s ease;
+}
+
+.gallery img:hover {
   border-color: transparent;
 }
 
-section div a span {
+.gallery span {
   display: block;
   margin-top: 8px;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
-  color: #ffffff;
   background: rgba(0, 0, 0, 0.6);
   padding: 6px 10px;
   border-radius: 4px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-section div a span:hover {
+.gallery span:hover {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
 }
@@ -392,14 +423,14 @@ input[type="radio"]:hover {
   outline-offset: 2px;
 }
 
-#surname,
-#name {
+.surname,
+.name {
   text-transform: capitalize;
 }
 
-#address h2,
-#route h2,
-#feedback-form h2 {
+.address h2,
+.route h2,
+.feedback-form h2 {
   font-family: 'Georgia', serif;
   font-size: 28px;
   font-weight: bold;
@@ -411,14 +442,14 @@ input[type="radio"]:hover {
   padding-bottom: 5px;
 }
 
-#address p {
+.address p {
   font-size: 18px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px;
 }
 
-#route iframe {
+.route iframe {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
@@ -449,9 +480,9 @@ input[type="radio"]:hover {
     margin: 30px 0 15px;
   }
 
-  #address h2,
-  #route h2,
-  #feedback-form h2 {
+  .address h2,
+  .route h2,
+  .feedback-form h2 {
     font-size: 22px;
   }
 
