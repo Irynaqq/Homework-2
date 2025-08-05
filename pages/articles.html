@@ -4,65 +4,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
+    <title>Статті</title>
+    <link rel="stylesheet" href="../css/style.css">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">Головна</a>
-        <a href="articles.html" style="color: red; font-weight: bold; text-decoration: underline">Статті</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="contacts.html">Контакти</a>
-        <a href="gallery.html">Галерея</a>
-        <a href="page-nav.html">Навігація</a>
-        <a href="registration.html">Реєстрація</a>
-      </nav>
-    </header>
-    <h1>Статті</h1>
-    <div id="articles-list">
-      <article>
-        <h2><a href="articles/article1.html">Перша стаття</a></h2>
-        <p>
-          Космічний простір, або космос (дав.-гр. κόσμος − всесвіт) — відносно
-          порожні ділянки Всесвіту, розташовані поза межами атмосфер небесних
-          тіл. Всупереч розповсюдженій думці, космос не цілком порожній, але у
-          ньому дуже низька густина речовини. Переважно це водень в атомарному,
-          молекулярному чи іонізованому стані, також є інші прості гази, тверді
-          частинки пилу, а за допомогою мікрохвильової спектроскопії виявлено
-          кілька десятків різних молекул та мегамолекул.
-          <a href="articles/article1.html">>>> читати далі</a>
-        </p>
-        <a href="articles/article1.html#comments">Перейти до коментарів</a>
-      </article>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="../index.html">Головна</a>
+          <a href="articles.html" class="active">Статті</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="page-nav.html">Навігація</a>
+          <a href="registration.html">Реєстрація</a>
+        </nav>
+      </header>
 
-      <article>
-        <h2><a href="articles/article2.html">Друга стаття</a></h2>
-        <p>
-          Протягом більшої частини історії людства, космос досліджувався за
-          допомогою спостережень, проведених з поверхні Землі — спочатку
-          неозброєним оком, а згодом за допомогою телескопа. До появи надійних
-          ракетних технологій, найближче досягання людиною космічного простору —
-          це польоти на повітряній кулі.
-          <a href="articles/article2.html">>>> читати далі</a>
-        </p>
-        <a href="articles/article2.html#comments">Перейти до коментарів</a>
-      </article>
+      <h1>Статті</h1>
+      <div id="articles-list">
+        <article class="fade-in">
+          <h2><a href="articles/article1.html">Перша стаття</a></h2>
+          <p>
+            Космічний простір, або космос (дав.-гр. κόσμος − всесвіт) — відносно
+            порожні ділянки Всесвіту, розташовані поза межами атмосфер небесних
+            тіл. Всупереч розповсюдженій думці, космос не цілком порожній, але у
+            ньому дуже низька густина речовини.
+            <a href="articles/article1.html">>>> читати далі</a>
+          </p>
+          <a href="articles/article1.html#comments" class="comments-link">Перейти до коментарів</a>
+        </article>
 
-      <article>
-        <h2><a href="articles/article3.html">Третя стаття</a></h2>
-        <p>
-          Сонячна система складається з гравітаційно пов'язаних небесних тіл:
-          масивного центрального тіла — Сонця — та численних об'єктів, що
-          обертаються навколо нього. Це вісім великих планет, понад 100 їхніх
-          супутників, пояс астероїдів та пояс Койпера, комети, метеороїди та
-          космічний пил.
-          <a href="articles/article3.html">>>> читати далі</a>
-        </p>
-        <a href="articles/article3.html#comments">Перейти до коментарів</a>
-      </article>
+        <article class="fade-in">
+          <h2><a href="articles/article2.html">Друга стаття</a></h2>
+          <p>
+            Протягом більшої частини історії людства, космос досліджувався за
+            допомогою спостережень, проведених з поверхні Землі.
+            <a href="articles/article2.html">>>> читати далі</a>
+          </p>
+          <a href="articles/article2.html#comments" class="comments-link">Перейти до коментарів</a>
+        </article>
+
+        <article class="fade-in">
+          <h2><a href="articles/article3.html">Третя стаття</a></h2>
+          <p>
+            Сонячна система складається з гравітаційно пов'язаних небесних тіл:
+            масивного центрального тіла — Сонця — та численних об'єктів, що
+            обертаються навколо нього.
+            <a href="articles/article3.html">>>> читати далі</a>
+          </p>
+          <a href="articles/article3.html#comments" class="comments-link">Перейти до коментарів</a>
+        </article>
+      </div>
+
+      <footer>&copy; Iryna Fastovsky</footer>
     </div>
-    <footer>&copy; Iryna Fastovsky</footer>
   </body>
 
 </html>

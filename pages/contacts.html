@@ -5,59 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <link rel="stylesheet" href="../css/style.css">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">Головна</a>
-        <a href="articles.html">Статті</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="contacts.html" style="color: red; font-weight: bold; text-decoration: underline">Контакти</a>
-        <a href="gallery.html">Галерея</a>
-        <a href="page-nav.html">Навігація</a>
-        <a href="registration.html">Реєстрація</a>
-      </nav>
-    </header>
-    <section id="address">
-      <h2>Адреса організації</h2>
-      <p>Майдан Незалежності, 1, Київ, Україна</p>
-    </section>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="../index.html">Головна</a>
+          <a href="articles.html">Статті</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="contacts.html" class="active">Контакти</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="page-nav.html">Навігація</a>
+          <a href="registration.html">Реєстрація</a>
+        </nav>
+      </header>
+      <section id="address">
+        <h2>Адреса організації</h2>
+        <p>Майдан Незалежності, 1, Київ, Україна</p>
+      </section>
 
-    <section id="route">
-      <h2>Як дістатися</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4785107375874!2d30.518075752674996!3d50.450813514324736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce505f2c2b6f%3A0x3c708bc302925049!2z0KLQpiDQk9C70L7QsdGD0YEtMQ!5e0!3m2!1sru!2sil!4v1752689120181!5m2!1sru!2sil"
-        width="600" height="450" style="border: 0" allowfullscreen loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
+      <section id="route">
+        <h2>Як дістатися</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4785107375874!2d30.518075752674996!3d50.450813514324736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce505f2c2b6f%3A0x3c708bc302925049!2z0KLQpiDQk9C70L7QsdGD0YEtMQ!5e0!3m2!1sru!2sil!4v1752689120181!5m2!1sru!2sil"
+          width="600" height="450" style="border: 0" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
 
-    <section id="feedback-form">
-      <h2>Форма зворотного зв'язку</h2>
-      <form action="https://tests.fomenko.top/echo/index.php" method="get">
-        <div>
-          <label for="name">Ім'я:</label>
-          <input id="name" name="name" type="text" placeholder="Введіть ім'я" required>
-        </div>
-        <div>
-          <label for="phone">Телефон:</label>
-          <input id="phone" name="phone" type="tel" placeholder="+380XXXXXXXXX">
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
-        </div>
-        <div>
-          <label for="question">Ваше запитання:</label>
-          <textarea id="question" name="question" rows="4" cols="40" placeholder="Введіть запитання"></textarea>
-        </div>
-        <div>
-          <button type="submit">Надіслати</button>
-        </div>
-      </form>
-    </section>
-    <footer>&copy; Iryna Fastovsky</footer>
+      <section id="feedback-form">
+        <h2>Форма зворотного зв'язку</h2>
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
+          <div>
+            <label for="name">Ім'я:</label>
+            <input id="name" name="name" type="text" placeholder="Введіть ім'я" required>
+          </div>
+          <div>
+            <label for="phone">Телефон:</label>
+            <input id="phone" name="phone" type="tel" placeholder="+380XXXXXXXXX">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
+          </div>
+          <div>
+            <label for="question">Ваше запитання:</label>
+            <textarea id="question" name="question" rows="4" cols="40" placeholder="Введіть запитання"></textarea>
+          </div>
+          <div>
+            <button type="submit">Надіслати</button>
+          </div>
+        </form>
+      </section>
+      <footer>&copy; Iryna Fastovsky</footer>
+    </div>
   </body>
 
 </html>
